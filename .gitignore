@@ -4,7 +4,6 @@
 *.tar.gz
 .DS_Store
 builds
-compressai/version.py
 tags
 venv*/
 venv/

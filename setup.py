@@ -37,8 +37,8 @@ from setuptools import find_packages, setup
 
 cwd = Path(__file__).resolve().parent
 
-package_name = "compressai"
-version = "1.2.0b3.Dev0"
+package_name = "bitcoder"
+version = "1.0.0"
 git_hash = "unknown"
 
 
@@ -122,10 +122,10 @@ def get_extra_requirements():
 setup(
     name=package_name,
     version=version,
-    description="A PyTorch library and evaluation platform for end-to-end compression research",
+    description="Tensor-Agnostic standAlone entropy coding unit extracted from InterDigital AI Lab'S CompressAI",
     url="https://github.com/InterDigitalInc/CompressAI",
-    author="InterDigital AI Lab",
-    author_email="compressai@interdigital.com",
+    author="Goluck Konuko",
+    author_email="goluck.konuko@centralesupelec.fr",
     packages=find_packages(exclude=("tests",)),
     zip_safe=False,
     python_requires=">=3.6",
@@ -134,8 +134,7 @@ setup(
         "scipy",
         "matplotlib",
         "torch>=1.7.1",
-        "torchvision",
-        "pytorch-msssim",
+        "torchvision"
     ],
     extras_require=get_extra_requirements(),
     license="BSD 3-Clause Clear License",
